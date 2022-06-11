@@ -44,15 +44,7 @@ Moving forward with the Exploratory data analysis, we encountered the unbalanced
 Moving forward, I analysed the pattern of transactions for both fraudulent transactions and genuine/valid transactions. I did this by checking the balance in the account of both the sender and the receiver before and after the transaction on a condition that the amount given is less than or equal to the amount that is in the sender's account.
 
 
-<img src="https://user-images.githubusercontent.com/89126969/173182847-5317864d-9097-40c1-b3c3-3ac1e36a5d42.png" width="300">
-<img src="https://user-images.githubusercontent.com/89126969/173182857-a08daf84-8d76-4875-ae68-1bea1eb08d09.png" width="300">
-<img src="https://user-images.githubusercontent.com/89126969/173182775-084a7e87-53e7-40e8-a2df-0777c5619975.png" width="300">
-
-
-
-
-![Graph 4](https://user-images.githubusercontent.com/89126969/173182857-a08daf84-8d76-4875-ae68-1bea1eb08d09.png)
-     ![Graph 2](https://user-images.githubusercontent.com/89126969/173182775-084a7e87-53e7-40e8-a2df-0777c5619975.png)
+<img src="https://user-images.githubusercontent.com/89126969/173182847-5317864d-9097-40c1-b3c3-3ac1e36a5d42.png" width="500"> <img src="https://user-images.githubusercontent.com/89126969/173182857-a08daf84-8d76-4875-ae68-1bea1eb08d09.png" width="500"> <img src="https://user-images.githubusercontent.com/89126969/173182775-084a7e87-53e7-40e8-a2df-0777c5619975.png" width="500">
 
 
 
