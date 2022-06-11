@@ -1,11 +1,11 @@
 # Fraudulent-Transactions-Analysis
 
 
-### Context
+## Context
 It is important that finance companies are able to recognize fraudulent transactions so that customers are not charged for items that they did not purchase.
 
 
-### Content
+## Content
 The datasets contains transactions made by customers of a finance company. This dataset presents transactions that occurred in some days, where we have 8213 frauds out of 63,62,619 transactions. The dataset is highly unbalanced, the positive class (frauds) account for 0.129% of all transactions.
 
 It contains not only numerical input variables but also sum categotical variables as well. The dataset has columns as Step, type, amount, nameOrig, oldbalanceOrg, newbalanceOrig, nameDest, oldbalanceDest, isFraud, isFlaggedFraud which indicated to perticular features and all of them are also mentioned below.
@@ -34,7 +34,8 @@ start with M (Merchants).
 **isFlaggedFraud** - The business model aims to control massive transfers from one account to another and flags illegal attempts. An illegal attempt in this dataset is an attempt to transfer more than 200.000 in a single transaction.
 
 
-### Exploratory Data Analysis
+
+## Exploratory Data Analysis
 
 Talking about any null or missing values in the dataset, I would say that there were no missing or NaN values in the raw dataset. Also, from the descriptive statistics of our dataset we could clearly see that our data is wide spread, i.e is having high variance. At this point, I could guess that the dataset might be unbalanced and would require undersampling in order to train our machine learning model well. 
 Moving forward with the Exploratory data analysis, we encountered the unbalanced characteristic of our dataset, we also analysed the presence of fraudulent transactions deeply for different types of transactions in order to get more clarified and proper view of how data is present. After this, I filtered the dataset by dropping the column which were not contributing significantly in providing any fruitful information for our model, such as “nameOrig” and “nameDest”. 
