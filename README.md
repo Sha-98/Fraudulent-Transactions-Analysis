@@ -42,6 +42,12 @@ start with M (Merchants).
 Talking about any null or missing values in the dataset, I would say that there were no missing or NaN values in the raw dataset. Also, from the descriptive statistics of our dataset we could clearly see that our data is wide spread, i.e is having high variance. At this point, I could guess that the dataset might be unbalanced and would require undersampling in order to train our machine learning model well. 
 Moving forward with the Exploratory data analysis, we encountered the unbalanced characteristic of our dataset, we also analysed the presence of fraudulent transactions deeply for different types of transactions in order to get more clarified and proper view of how data is present. After this, I filtered the dataset by dropping the column which were not contributing significantly in providing any fruitful information for our model, such as “nameOrig” and “nameDest”. 
 Moving forward, I analysed the pattern of transactions for both fraudulent transactions and genuine/valid transactions. I did this by checking the balance in the account of both the sender and the receiver before and after the transaction on a condition that the amount given is less than or equal to the amount that is in the sender's account.
+
+
+![Graph 1](https://user-images.githubusercontent.com/89126969/173182719-9e545d61-550d-4763-a348-62486b928681.png)
+
+
+
 and, the amount received is less than or equal to the amount that is in the receiver's account. I found that,
 
 Number of observations where the amount given is greater than the amount that is in the sender's account:  4079080
