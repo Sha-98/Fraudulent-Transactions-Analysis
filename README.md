@@ -48,7 +48,7 @@ Moving forward, I analysed the pattern of transactions for both fraudulent trans
 
 
 
-        <img src="https://user-images.githubusercontent.com/89126969/173182775-084a7e87-53e7-40e8-a2df-0777c5619975.png" width="800">
+<img src="https://user-images.githubusercontent.com/89126969/173182775-084a7e87-53e7-40e8-a2df-0777c5619975.png" width="800">
 
 
 
