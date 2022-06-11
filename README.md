@@ -5,6 +5,7 @@
 It is important that finance companies are able to recognize fraudulent transactions so that customers are not charged for items that they did not purchase.
 
 
+
 ## Content
 The datasets contains transactions made by customers of a finance company. This dataset presents transactions that occurred in some days, where we have 8213 frauds out of 63,62,619 transactions. The dataset is highly unbalanced, the positive class (frauds) account for 0.129% of all transactions.
 
@@ -35,6 +36,7 @@ start with M (Merchants).
 
 
 
+
 ## Exploratory Data Analysis
 
 Talking about any null or missing values in the dataset, I would say that there were no missing or NaN values in the raw dataset. Also, from the descriptive statistics of our dataset we could clearly see that our data is wide spread, i.e is having high variance. At this point, I could guess that the dataset might be unbalanced and would require undersampling in order to train our machine learning model well. 
@@ -60,4 +62,45 @@ And thus, from such outcomes I was able to conclude that
 
 After adding these feature I went to check the time of a day when fraudulent transaction happen. By visualizing the data against time, I found that from hour 0 to hour 9, valid/genuine transactions very rarely occur. On the other hand, fraudulent transactions still occur at similar rates to any hour of the day outside of hours 0 to 9.
 And that is why I added the hours of a day feature into our data set as a column. 
+
+
+
+## Descriptive Statistics of Amount, both Valid and Fraud
+
+It seems that during fraudulent transactions, the amount moved is capped at 10 million currency units.
+Whereas for valid transactions, the amount moved is capped at about 92.4 million currency units.
+Only valid transaction involved amounts larger than 10,000,000, however these transactions make up less than 0.01% of the relevant data.
+When the amounts moved is less than 10,000,000 there doesn't seem to be a large difference fraudulent and valid transactions.
+I will leave the variable amount as it is and will not be creating a feature out of it.
+
+
+
+## Handling Categorical Data
+
+So, we have a column "type" which consists of categorical features as "TRANSFER" and "CASH_OUT". Now, as we cannot assign ranking to these features, as neither of them if higher or lower from another one.
+Therefore, I will be applying One-Hot Encoding for these variables.
+One-Hot encoding involves creating indicator variables for each category in a categorical variable. If an observation is part of a particular category (e.g. the transaction type is CASH_OUT), the indicator variable associated with the category would be 1. If it isn't part of a particular category, then the indicator variable associated with that category would be 0.
+
+
+
+## Scaling and Splitting the Data into Test and Train
+
+Data scaling is a recommended pre-processing step when working with many machine learning algorithms. Data scaling can be achieved by normalizing or standardizing real-valued input and output variables. I scaled down the data using StandardScalar() function in order to make data ready and fit for training the machine learning model.
+But, Why did I scaled my data. This is because Machine learning models learn a mapping from input variables to an output variable. As such, the scale and distribution of the data drawn from the domain may be different for each variable. Standardizing a dataset involves rescaling the distribution of values so that the mean of observed values is 0 and the standard deviation is 1. This can be thought of as subtracting the mean value or centering the data.
+
+After scaling my dataset, I split it into the test and train data sets. Separating data into training and testing sets is an important part of evaluating data mining models.When you separate a data set into a training set and testing set, most of the data is used for training, and a smaller portion of the data is used for testing. By splitting the data into training and testing sets, we are trying to avoid overfitting or underfitting, and even if it happens, we can observe it before deploying it.
+
+
+
+## Handling Imbalanced Data
+
+A widely adopted technique for dealing with highly unbalanced datasets is called resampling. It consists of removing samples from the majority class (under-sampling) and/or adding more examples from the minority class (over-sampling). The simplest implementation of over-sampling is to duplicate random records from the minority class, which can cause overfishing. In under-sampling, the simplest technique involves removing random records from the majority class, which can cause loss of information.
+
+
+
+![image](https://user-images.githubusercontent.com/89126969/173182633-6b0dbbf9-1e13-43a1-af4d-02c668e12730.png)
+
+
+
+Here, in this project, I have applied undersampling to treat the imbalanced dataset
 
