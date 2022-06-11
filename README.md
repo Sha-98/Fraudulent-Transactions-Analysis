@@ -134,6 +134,24 @@ A random forest is a meta estimator that fits a number of decision tree classifi
 Decision Trees (DTs) are a non-parametric supervised learning method used for classification and regression. The goal is to create a model that predicts the value of a target variable by learning simple decision rules inferred from the data features. A tree can be seen as a piecewise constant approximation.
 
 
+
+
 ![image](https://user-images.githubusercontent.com/89126969/173183674-5a091466-02ac-4005-9ab0-fa8132e72255.png)
 
+
+## Important features
+
+![Graph 9](https://user-images.githubusercontent.com/89126969/173183743-8152fd42-2318-45e3-a606-41e6ae510fb4.png)
+
+
+
+
+## Conclusion
+
+
+1. The dataset is huge with over million data points, and the ratio of fraud to valid data is heavily skewed towads valid data
+
+2. Feature engineering and creation of two new features namely 'errorbalance' and 'HourofDay' yielded fruitful results.
+
+3. Random Forest Classifier is the best model in the given situation as it is fairly accurate in predicting both fraud and valid data, and has the heigest AUC .
 
