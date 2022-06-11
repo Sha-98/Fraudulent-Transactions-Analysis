@@ -76,6 +76,9 @@ And that is why I added the hours of a day feature into our data set as a column
 
 
 
+
+
+
 ## Descriptive Statistics of Amount, both Valid and Fraud
 
 It seems that during fraudulent transactions, the amount moved is capped at 10 million currency units.
@@ -114,4 +117,19 @@ A widely adopted technique for dealing with highly unbalanced datasets is called
 
 
 Here, in this project, I have applied undersampling to treat the imbalanced dataset
+
+
+
+
+## Model Creation
+
+
+### Random Forest
+
+A random forest is a meta estimator that fits a number of decision tree classifiers on various sub-samples of the dataset and uses averaging to improve the predictive accuracy and control over-fitting. The injected randomness in forests yield decision trees with somewhat decoupled prediction errors. By taking an average of those predictions, some errors can cancel out. Random forests achieve a reduced variance by combining diverse trees, sometimes at the cost of a slight increase in bias. In practice the variance reduction is often significant hence yielding an overall better model.
+
+
+### Decision Tree
+
+Decision Trees (DTs) are a non-parametric supervised learning method used for classification and regression. The goal is to create a model that predicts the value of a target variable by learning simple decision rules inferred from the data features. A tree can be seen as a piecewise constant approximation.
 
