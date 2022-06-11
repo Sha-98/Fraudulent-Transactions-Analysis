@@ -41,7 +41,11 @@ start with M (Merchants).
 
 Talking about any null or missing values in the dataset, I would say that there were no missing or NaN values in the raw dataset. Also, from the descriptive statistics of our dataset we could clearly see that our data is wide spread, i.e is having high variance. At this point, I could guess that the dataset might be unbalanced and would require undersampling in order to train our machine learning model well. 
 Moving forward with the Exploratory data analysis, we encountered the unbalanced characteristic of our dataset, we also analysed the presence of fraudulent transactions deeply for different types of transactions in order to get more clarified and proper view of how data is present. After this, I filtered the dataset by dropping the column which were not contributing significantly in providing any fruitful information for our model, such as “nameOrig” and “nameDest”. 
-Moving forward, I analysed the pattern of transactions for both fraudulent transactions and genuine/valid transactions. I did this by checking the balance in the account of both the sender and the receiver before and after the transaction on a condition that the amount given is less than or equal to the amount that is in the sender's account.
+Moving forward, I analysed the pattern of transactions for both fraudulent transactions and genuine/valid transactions. I did this by checking the balance in the account of both the sender and the receiver before and after the transaction on a condition that the amount given is less than or equal to the amount that is in the sender's account. And, the amount received is less than or equal to the amount that is in the receiver's account. I found that,
+
+*Number of observations where the amount given is greater than the amount that is in the sender's account:  4079080*
+
+*Number of observations where the amount given is greater than the amount that is in the sender's account:  4079080*
 
 
 <img src="https://user-images.githubusercontent.com/89126969/173182847-5317864d-9097-40c1-b3c3-3ac1e36a5d42.png" width="500">    <img src="https://user-images.githubusercontent.com/89126969/173182857-a08daf84-8d76-4875-ae68-1bea1eb08d09.png" width="500"> 
@@ -52,18 +56,11 @@ Moving forward, I analysed the pattern of transactions for both fraudulent trans
 
 
 
-
-and, the amount received is less than or equal to the amount that is in the receiver's account. I found that,
-
-Number of observations where the amount given is greater than the amount that is in the sender's account:  4079080
-
-Number of observations where the amount given is greater than the amount that is in the sender's account:  4079080
-
 After getting these results, for double checking of fraudulent transactions or can say getting one more feature to analyse the transaction being valid or fraud, I checked for error balance in the accounts, and found that 
 
-Percentage of observations with balance errors in the account giving money:  85.0
+*Percentage of observations with balance errors in the account giving money:  85.0*
 
-Percentage of observations with balance errors in the account receiving money:  74.0
+*Percentage of observations with balance errors in the account receiving money:  74.0*
 
 And thus, from such outcomes I was able to conclude that
 1.	There is erroneous results in the new and old balance accounts for both sender and receiver
