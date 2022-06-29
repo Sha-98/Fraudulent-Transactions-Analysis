@@ -1,5 +1,7 @@
 # Fraudulent-Transactions-Analysis
 
+<img src="https://user-images.githubusercontent.com/89126969/176467417-3756d6e1-af24-4091-8d28-8102666f1a97.png" width="800">
+
 
 ## Context
 It is important that finance companies are able to recognize fraudulent transactions so that customers are not charged for items that they did not purchase.
